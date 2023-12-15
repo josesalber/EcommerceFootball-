@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: var(--sm-font);
+}
+
+h2 {
+
+    color: #548fae;
+}
+h1{
+
+    color: #548fae;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilo del encabezado */
+header {
+    background-color: rgb(135, 189, 191);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo de los enlaces */
+a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+
+/* Estilo de las secciones */
+section {
+    margin: 20px;
+}
+
+/* Estilo de las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    color: #3b657a;
+}
+
+th {
+    background-color: rgb(135, 189, 191);
+    color: #3b657a;
+}
+
+/* Estilo para filas alternas en las tablas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* Agrega estos estilos a tu archivo styleadmin.css o en el encabezado HTML */
+
+/* Estilo para el formulario en línea */
+form {
+    display: inline-block;
+    margin: 0;
+}
+
+/* Estilo para el menú desplegable */
+select {
+    padding: 5px;
+}
+
+/* Estilo para el botón de actualizar */
+button {
+    padding: 5px 10px;
+    background-color: rgb(135, 189, 191); /* Color verde de Bootstrap */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    font-family: 'Poppins';
+    font-size: 17px;
+    border-radius: 10px;
+
+}
+
+/* Estilo para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilo para las celdas de la tabla */
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo para la fila resaltada cuando se pasa el mouse */
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+/* Estilo moderno para el menú desplegable */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    appearance: none; /* Elimina la apariencia predeterminada del sistema */
+    -webkit-appearance: none; /* Para navegadores basados en WebKit como Chrome y Safari */
+    background-color: #fff;
+    cursor: pointer;
+    font-family: "Poppins";
+}
+
+/* Estilo para resaltar el menú desplegable cuando está enfocado */
+select:focus {
+    outline: none;
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Agrega una sombra al enfocar */
+}
+
+/* Estilo para las opciones dentro del menú desplegable */
+select option {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilo para las opciones cuando se pasa el mouse sobre ellas */
+select option:hover {
+    background-color: #f5f5f5;
+}
