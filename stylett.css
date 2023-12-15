@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+body{
+    font-family: var(--sm-font);
+}
+
+
+/* navbar */
+.navbar{
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img{
+    width: 70px;
+}
+.navbar-brand span{
+    letter-spacing: 20px;
+    font-family: var(--lg-font);
+}
+.nav-link:hover{
+    color: var(--pink)!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+
+/* footer */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
+
+
+/* Estilo para el icono del carrito */
+.cart-icon {
+    font-size: 50px; /* Tamaño del icono del carrito */
+    margin-right: 10px; /* Espacio a la derecha para separar del texto */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    position: relative; /* Establecer la posición en relativo */
+    top: 2px; /* Ajustar la posición verticalmente si es necesario */
+}
+
+.cart {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	background-color: white;
+	box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	overflow-y: auto;
+}
+
+.cart h2 {
+	font-size: 24px;
+}
+
+.cart-items {
+	list-style: none;
+	padding: 0;
+}
+
+.cart-items li {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.cart-total {
+	font-size: 20px;
+	text-align: right;
+	margin-top: 20px;
+    padding: 1rem;
+}
+
+
+.close-cart {
+    position: static;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ff5733; /* Cambia el color de fondo a tu elección */
+    color: #fff; /* Cambia el color del texto a tu elección */
+    border: none;
+    border-radius: 50%; /* Hace que el botón sea redondeado */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+}
+
+.close-cart:hover {
+    background-color: #ff3314; /* Cambia el color de fondo en el hover */
+}
+
+/* También puedes agregar una sombra sutil en el hover para efecto de elevación */
+.close-cart:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el botón de "Pagar" */
+.pay-button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    margin-right: 10px; 
+    border-radius: 20px;
+}
+
+/* Estilo para el botón de "Limpiar" */
+.clear-button {
+    background-color: #f44336; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 20px;
+
+}
+
+/* Estilo adicional si se pasa el mouse por encima de los botones */
+.pay-button:hover, .clear-button:hover {
+    opacity: 0.9; 
+}
+#perfil {
+    margin-top: 250px;
+    padding: 20px;
+}
+
+#perfil h2 {
+    color: rgb(135, 189, 191); /* Color del encabezado */
+    margin-bottom: 50px;
+}
+
+#perfil p {
+    margin-bottom: 40px; /* Espaciado inferior entre párrafos */
+    color: #343a40; /* Color del texto */
+}
+
+/* Puedes agregar más estilos según tus necesidades */
+
+
+
+

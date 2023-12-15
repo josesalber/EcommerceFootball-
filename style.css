@@ -1,0 +1,292 @@
+    @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Section banner de arriba con animacion*/
+
+#hero{
+    background-image: url(./images/fondo.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 7rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1s;
+}
+#hero h1:nth-child(1) {
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2) {
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3) {
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3s;
+}
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(135,189,191,255);
+    animation: text_reveal_box 1s ease forwards;
+    animation-delay: 0.5s;
+}
+#hero h1:nth-child(1) span {
+	animation-delay: 0.5s;
+}
+#hero h1:nth-child(2) span {
+	animation-delay: 1.5s;
+}
+#hero h1:nth-child(3) span {
+	animation-delay: 2.5s;
+}
+
+#hero .cta{
+    border-radius: 1rem;
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgba(135,189,191,255);
+    background-color: transparent;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#hero .cta:hover{
+    color: white;
+    background-color: rgba(135,189,191,255);
+}
+/*End Hero Section banner de arriba con animacion*/
+
+/*animacion del banner texto no boton*/
+@keyframes text_reveal_box {
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal {
+    100% {
+        color: white;
+    }
+}
+@keyframes text_reveal_name {
+    100% {
+        color: white;
+        
+    }
+}
+/*animacion del banner texto no boton*/
+
+
+
+.side-image {
+    background-image: url('images/logotienda.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    bottom: 10%;
+    left: 50%;
+    width: 40%; 
+    height: auto;
+}
+
+
+/* Agrega estilos para la sección de inicio de sesión */
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/lusail.jpg);
+    background-size: contain;
+    background-position: top center;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+
+/* Aumenta el tamaño del formulario y el contenido */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 100px;
+    width: 70%;
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form {
+    max-width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+
+
+/* Aumenta el tamaño de fuente y el espaciado del texto dentro del formulario */
+.login-form label {
+    font-size: 7rem; /* Aumenta el tamaño de fuente de las etiquetas */
+    margin-bottom: 15px; /* Aumenta el espacio entre las etiquetas */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    font-size: 1.5rem; /* Aumenta el tamaño de fuente de los campos de entrada */
+
+}
+/* Estilos para el botón de "Iniciar sesión" con la fuente importada de Google Fonts */
+.login-form input[type="submit"] {
+    background: rgba(60,233,218,255);
+    color: #fff;
+    border: none;
+    padding: 15px 20px; /* Aumenta el tamaño del botón */
+    margin-top: 20px; /* Aumenta el espacio entre los campos de entrada y el botón */
+    cursor: pointer;
+    font-size: 4rem;
+    font-family: 'Mouse Memoirs', sans-serif; /* Utiliza la fuente importada */
+}
+
+
+/* Estilos para el botón de "Registrarse" en el formulario de inicio de sesión */
+.login-form .cta {
+    display: block;
+    text-align: center;
+    background-color: #135b5b; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 2rem; /* Espaciado interno del botón */
+    border: none;
+    border-radius: 1rem; /* Borde redondeado del botón */
+    font-size: 4rem; /* Tamaño de fuente del botón */
+    cursor: pointer;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    margin-top: 15px; /* Espaciado superior del botón */
+    background: rgba(0,156,183,255);
+    
+
+}
+
+
+/* Agrega estos estilos para el formulario de registro */
+#registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/camp.jpg);
+    background-size: contain;
+    background-position: top center;
+    min-height: 100vh;
+    position: relative;
+}
+
+#registro .registro-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 500px;
+    border-radius: 100px;
+    width: 70%;
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#registro label {
+    font-size: 7rem; /* Aumenta el tamaño de fuente de las etiquetas */
+    margin-bottom: 15px; /* Aumenta el espacio entre las etiquetas */
+    color: white; /* Cambia el color del texto a blanco */
+
+}
+
+#registro input {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    font-size: 1.5rem; /* Aumenta el tamaño de fuente de los campos de entrada */
+}
+
+#registro input[type="submit"] {
+    background: rgba(0,156,183,255);
+    color: #fff;
+    border: none;
+    padding: 15px 20px; /* Aumenta el tamaño del botón */
+    margin-top: 20px; /* Aumenta el espacio entre los campos de entrada y el botón */
+    cursor: pointer;
+    font-size: 4rem;
+    font-family: 'Mouse Memoirs', sans-serif; /* Utiliza la fuente importada */
+}
+
+#registro .cta {
+    display: block;
+    text-align: center;
+    background-color: #135b5b; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 2rem; /* Espaciado interno del botón */
+    border: none;
+    border-radius: 42px; /* Borde redondeado del botón */
+    font-size: 4rem; /* Tamaño de fuente del botón */
+    cursor: pointer;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    margin-top: 15px; /* Espaciado superior del botón */
+    background: rgb(135, 189, 191);
+}

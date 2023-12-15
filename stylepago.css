@@ -1,0 +1,132 @@
+
+.checkoutLayout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 5rem;
+}
+.checkoutLayout .right{
+    background-color: rgb(135, 189, 191);
+    border-radius: 20px;
+    padding: 75px;
+    color: #fff;
+}
+.checkoutLayout .right .form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+.checkoutLayout .form h1,
+.checkoutLayout .form .group:nth-child(-n+3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.checkoutLayout .form input, 
+.checkoutLayout .form select
+{
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+    border:none;
+    background-color: white;
+    color: rgb(142, 215, 215);
+}
+.checkoutLayout .right .return .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.checkoutLayout .right .return .row div:nth-child(2){
+    font-weight: bold;
+    font-size: x-large;
+}
+.buttonCheckout{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(64, 176, 172);
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.list {
+    /* Asegúrate de que los elementos en la lista estén en línea o en línea-block */
+    text-align: center; /* Centra los elementos en la lista */
+  }
+  
+  .item {
+    display: inline-block; /* Los elementos de la lista son elementos en línea-block */
+    margin: 10px; /* Agrega margen entre los productos */
+    padding: 10px; /* Agrega relleno a los productos */
+  }
+  
+.returnCart h1{
+    border-top: 1px solid #eee;  
+    padding: 20px 0;
+}
+.returnCart .list .item img{
+    height: 80px;
+}
+.returnCart .list .item {
+    display: inline-block; /* Cambia de "grid" a "inline-block" */
+    margin-right: 10px; /* Agrega un margen derecho para separar los productos */
+    padding: 10px; /* Agrega relleno a los productos */
+    box-shadow: 0 10px 20px #5555;
+    border-radius: 20px;
+}
+
+.returnCart .list .item .name,
+.returnCart .list .item .returnPrice{
+    font-size: large;
+    font-weight: bold;
+}
+
+/* footer */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+/* Estilos para el formulario de pago */
+#payment-form {
+    /* Agrega reglas CSS que coincidan con las del formulario principal */
+    background-color: rgb(135, 189, 191);
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+}
+
+#payment-form .form input,
+#payment-form .form select {
+    /* Aplica estilos a los campos del formulario de pago */
+    /* Utiliza propiedades CSS comunes del formulario principal */
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    color: rgb(135, 189, 191);
+}
+
+
+
+
+/* ... Otros estilos necesarios para el formulario de pago ... */
+
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
+
